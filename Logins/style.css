@@ -14,9 +14,10 @@
 }
 
 .janela-logins{
+    
     width: 380px;
     height: 480px;
-    position: relative;
+    position:relative;
     margin: 6% auto;
     background: #fff;
     padding: 5px;
@@ -49,6 +50,11 @@
     background: linear-gradient(to right, #ff105f, #ffad06);
     border-radius: 30px;
     transition: .5s;
+}
+
+.titulo{
+    position: center;
+    padding-bottom: 25px;
 }
 
 .input-group{
@@ -91,6 +97,7 @@ span{
     font-size: 12px; 
     bottom: 68px;
     position: absolute;
+    
 }
 #login{  
     left: 50px;
