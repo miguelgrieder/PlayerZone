@@ -9,21 +9,21 @@
     background-color: rgb(50, 47, 66)
 }
 
-#menu-h {
+#menu_web {
     background-color: rgb(50, 47, 66);
 }
 
-#menu-h ul {
+#menu_web ul {
     max-width: 800px;
     list-style: none;
     padding: 0;
 }
 
-#menu-h ul li{
+#menu_web ul li{
     display: inline;
 }
 
-#menu-h ul li a{
+#menu_web ul li a{
     color: #fff;
     padding: 20px;
     display: inline-block;
@@ -31,16 +31,16 @@
     transition: background .4s;
 }
 
-#menu-h ul li a:hover {
+#menu_web ul li a:hover {
     background-color: rgb(24, 139, 233);
 }
 
-#menu-h ul li:last-child a {
+#menu_web ul li:last-child a {
     float: right;
     background-color: rgb(24, 139, 233);
 }
 
-#section {
+#playzer_zone_nome_e_icone {
     border-radius: 1em;
     padding: 1em;
     position: absolute;
