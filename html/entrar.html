@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style_login.css"
 
     
 </head>
@@ -21,6 +22,51 @@
             <li><a href="entrar.html">Entrar</a></li>
         </ul>
     </nav>
+
+    <div class="fundo">
+        <div class="janela-logins">
+            <div class="box-btn-logins">
+                <div id="btn"></div>
+                <button type="button" class="btns-logins" onclick="login()">Login</button>
+                <button type="button" class="btns-logins" onclick="cadastrar()">Cadastrar</button>
+             </div>
+
+            <form id = "login" class="input-group">
+                <div class = "titulo">Volte a ação!</div>
+               <input type="text" class="input-campo" placeholder="Codenome" required>
+               <input type="text" class="input-campo" placeholder="Senha" required>
+               <input type="checkbox" class="chech-box"><span>Lembrar senha</span>
+               <button type="submit" class="submit-btn">Entrar</button>
+            </form>
+            <form id = "cadastrar" class="input-group">
+                <div class = "titulo">Sua jornada começa aqui!</div>
+                <input type="text" class="input-campo" placeholder="Codenome" required>
+                <input type="email" class="input-campo" placeholder="Email" required>
+                <input type="text" class="input-campo" placeholder="Senha" required>
+                <input type="checkbox" class="chech-box"><span>Receber noificações por email</span>
+                <button type="submit" class="submit-btn">Criar conta!</button>
+             </form>
+        </div>
+    </div>
+
+    <script>
+        var x = document.getElementById("login");
+        var y = document.getElementById("cadastrar");
+        var z = document.getElementById("btn");
+
+        function cadastrar(){
+            x.style.left = "-400px";
+            y.style.left = "50px";
+            z.style.left = "110px";
+        }
+
+        function login(){
+            x.style.left = "50px";
+            y.style.left = "450px";
+            z.style.left = "0px";
+        }
+    
+    </script>
 
 </body>
 
