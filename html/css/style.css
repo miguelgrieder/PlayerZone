@@ -5,8 +5,12 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+#background_html {
+    background-color: rgb(50, 47, 66)
+}
+
 #menu-h {
-    background-color:  rgb(37, 37, 39);
+    background-color: rgb(50, 47, 66);
 }
 
 #menu-h ul {
@@ -34,4 +38,14 @@
 #menu-h ul li:last-child a {
     float: right;
     background-color: rgb(24, 139, 233);
+}
+
+#section {
+    border-radius: 1em;
+    padding: 1em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%) 
 }
