@@ -1,17 +1,26 @@
-const btnMobile = document.getElementById('btn-mobile');
+const navToggle = document.querySelector("#navToggle");
+const navClosedIcon = document.querySelector("#navClosed");
+const navOpenIcon = document.querySelector("#navOpen");
+const navIcon = document.querySelectorAll(".navIcon");
+const nav = document.querySelector("nav");
 
-function toggleMenu(event) {
-  if (event.type === 'touchstart') event.preventDefault();
-  const nav = document.getElementById('nav');
-  nav.classList.toggle('active');
-  const active = nav.classList.contains('active');
-  event.currentTarget.setAttribute('aria-expanded', active);
-  if (active) {
-    event.currentTarget.setAttribute('aria-label', 'Fechar Menu');
-  } else {
-    event.currentTarget.setAttribute('aria-label', 'Abrir Menu');
-  }
-}
+navToggle.addEventListener("click", () => {
+  nav.classList.toggle("open");
+  navIcon.forEach((icon) => {
+    icon.classList.toggle("hidden");
+  });
+});
 
-btnMobile.addEventListener('click', toggleMenu);
-btnMobile.addEventListener('touchstart', toggleMenu);
+
+window.addEventListener(
+  "resize", () => {
+    if (document.body.clientWidth > 720) {
+      nav.classList.remove("open");
+      navIcon.forEach((icon) => {
+        icon.classList.remove("hidden");
+      });
+      navOpenIcon.classList.add("hidden");
+    }
+  },
+  { passive: false }
+);

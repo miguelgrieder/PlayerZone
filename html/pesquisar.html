@@ -1,31 +1,39 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html>
 
 <head>
-    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
-    <link rel="stylesheet" href="css/style.css">
-
-    
+    <title>Pesquisar</title>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
-<body id="background_html">
-    <header id="header">
-        <a href="../index.html"><img src="./img/player_zone_icone_sem_borda.png" alt="logo" float="left" width="46" height="30" align="middle"></a>
-        <nav id="nav">
-            <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">Menu
-                <span id="botao_menu_estilo"></span>
-              </button>
-            <ul id="menu" role="menu">
-                <li><a href="inicio.html">Inicio</a></li>
-                <li><a href="comunidade.html">Comunidade</a></li>
-                <li><a href="quem_somos.html">Quem Somos</a></li>
-                <li><a href="pesquisar.html">Pesquisar</a></li>
-                <li><a href="entrar.html">Entrar</a></li>
+<body>
+    <header>
+        <div class="container">
+          
+          <div>
+            <h2><a href="../index.html">PlayerZone</a></h2>
+            <div class="nav-toggle" id="navToggle">
+              
+              <img id="navClosed" class="navIcon" src="./img/icone_abrir.png" alt="mobile menu">
+              <img id="navOpen" class="navIcon hidden" src="./img/icone_fechar.png" alt="close mobile">
+            </div>
+          </div>
+          
+          <nav>
+            <ul>
+              <li><a href="./inicio.html">Inicio</a></li>
+              <li><a href="./comunidade.html">Comunidade</a></li>
+              <li><a href="./quem_somos.html">Quem Somos</a></li>
+              <li><a href="./pesquisar.html">Pesquisar</a></li>
+              <li><a href="./entrar.html">Entrar</a></li>
             </ul>
-        </nav>
-    </header>
+          </nav>
+          
+        </div>
+      </header>
+    
+
     <script src="./js/menu.js"></script>
 </body>
 
