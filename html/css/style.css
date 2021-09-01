@@ -115,18 +115,29 @@ body {
 .sub_menu{
   
   color: orange;
-  position:absolute;
+  position:initial;
   text-align: center;
-  bottom: 5%;
-  left: 50%;
-}
-.termos{
-  color: orange
+  margin: 5% 5% 5% 5%;
+  bottom: 0;
 }
 
-.termos_texto{
+.link_termos{padding: 5px; 
+}
+
+.termos{
+  color: rgb(255, 198, 93);
+}
+
+.paragrafo_texto{
   color: wheat;
   position: relative;
   text-align: center;
   margin: 5% 5% 5% 5%;
+}
+
+.img_central{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
