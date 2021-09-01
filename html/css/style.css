@@ -111,3 +111,22 @@ body {
 .playzer_zone_nome_e_icone_inicializacao {
   opacity: 0.6;
 }
+
+.sub_menu{
+  
+  color: orange;
+  position:absolute;
+  text-align: center;
+  bottom: 5%;
+  left: 50%;
+}
+.termos{
+  color: orange
+}
+
+.termos_texto{
+  color: wheat;
+  position: relative;
+  text-align: center;
+  margin: 5% 5% 5% 5%;
+}
