@@ -116,7 +116,6 @@ header {
   
   color: orange;
   text-align: center;
-  margin: 5px 5px 5px 5px;
   bottom: 0;
   width: 100%;
 }
@@ -130,39 +129,10 @@ header {
   color: rgb(255, 198, 93);
 }
 
-.paragrafo_texto{
-  color: wheat;
-  position: relative;
-  text-align: center;
-  margin: 5% 5% 5% 5%;
-}
-
 .img_central{
   display: block;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 25px;
   width: 50%;
-}
-
-.catalogo_texto{
-  font-size: 20px;
-  color: rebeccapurple;
-  font-weight: bold;
-}
-
-.img_inicio{
-  height: 218px;
-  width: 158px;
-  max-width: inherit;
-  max-height: inherit;
-  height: inherit;
-  width: inherit;
-  object-fit: contain;
-}
-
-.txt_inicio{
-  text-align: center;
-  font-size: 125%;
-  font-weight: bold;
 }

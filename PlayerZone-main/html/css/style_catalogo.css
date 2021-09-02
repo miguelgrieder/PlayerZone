@@ -22,11 +22,11 @@
 }
 /* A IMAGEM DEVE SER DE DIMENSOES 158px X 248px */
 .catalogo img { 
-    width: 158px;
-    height: 248px;
+    width: 100%;
+    height: auto;
 }
 
-@media all and (max-width: 720px) {
+@media all{
     .catalogo {
         overflow: hidden;
         display: flex;
@@ -34,6 +34,7 @@
         margin-top: 1rem;
         margin-left: 1rem;
         margin-right: 1rem;
+        margin-bottom: 1rem;
         background-color: rgb(210, 208, 221);
     }
 
@@ -41,4 +42,5 @@
         list-style:none;
         display:flex;
     }
-}
+    
+} 
