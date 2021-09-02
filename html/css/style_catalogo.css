@@ -22,8 +22,8 @@
 }
 /* A IMAGEM DEVE SER DE DIMENSOES 158px X 248px */
 .catalogo img { 
-    width: 100%;
-    height: auto;
+    width: 158px;
+    height: 248px;
 }
 
 @media all and (max-width: 720px) {
