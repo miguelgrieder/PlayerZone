@@ -13,13 +13,16 @@
     list-style-type: none;
     padding: 0;
     align-items: center;
+    margin: 0 0 0 0;
 }
 
 .catalogo ul li {
     display: inline-block;
-    padding: 0 0.6rem;
+    padding: 0.6rem 0.6rem;
+    margin: 0 0 0 0;
     text-decoration: none;
 }
+
 
 .catalogo_resize { 
     width: 158px;
@@ -42,7 +45,14 @@
 
 .catalogo p {
     text-align: center;
-    font-size: 2vw; /* UMA UNIDADE DE MEDIDA VARIAVEL, PARA ACOMPANHAR O AJUSTAMENTO DE TAMANHOS DA TELA */
+    font-size:calc(8px + 1vw);/* UMA UNIDADE DE MEDIDA VARIAVEL, PARA ACOMPANHAR O AJUSTAMENTO DE TAMANHOS DA TELA */
+    font-weight:normal;
+    margin: 0 0 0 0;
+
+}
+
+#top4 {
+    margin: 1% 1% 1% 1%;
     font-weight: bold;
 }
 
