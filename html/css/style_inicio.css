@@ -14,6 +14,7 @@
     padding: 0;
     align-items: center;
     margin: 0 0 0 0;
+    
 }
 
 .catalogo ul li {
@@ -27,20 +28,19 @@
 .catalogo_resize { 
     width: 158px;
     height: 248px;
-    max-width: inherit;
-    max-height: inherit;
-    height: inherit;
-    width: inherit;
-    object-fit: contain;
+    width: auto;
+    height: auto;
 }
 
-/* A IMAGEM DEVE SER DE DIMENSOES 158px X 248px */
-/* PS: ARRUMAR METODO PARA DIMENSIONAR IMAGEM ANTES DE INSERIR EM CLASSES, OU FAZER MANUALMENTE */
-/* DE QUALQUER FORMA AS IMAGENS AINDA SEGUEM UM PADRÃO DE TAMANHO ALTERAVEL, ACOMPANHAMENTO AS DIMENSOES DA TELA */
+
+
+/* A IMAGEM DEVE SER DE DIMENSOES 158px X 248px, mas são redimensionadas para caber */
+
 
 .catalogo .catalogo_resize {
-    width: 100%;
-    height: auto;
+    width: 158px;
+    height: 248px;
+    object-fit: fill;
 }
 
 .catalogo p {

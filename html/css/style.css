@@ -41,6 +41,22 @@ header {
   text-decoration: underline;
 }
 
+/* Footer - rodape - submenu e termos */
+.sub_menu{  
+  color: orange;
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+  margin: 7% 0% 0% 0%;
+}
+
+
+.termos{
+  color: rgb(255, 198, 93);
+  text-decoration: none;
+}
+
+
 /* Usado para midias principais em uma pagina */
 .paragrafo_texto{
   color: wheat;
@@ -126,47 +142,4 @@ header {
 
 .playzer_zone_nome_e_icone_inicializacao {
   opacity: 0.6;
-}
-
-/* CUSTOM HOME SEARCH
-CONTAINER
---------------------*/
-.container-search {
-  padding: 3px;
-  border: 1px solid #f1f1f1;
-  border-radius: 5px;
-  position: relative;
-  margin: 10% 10% 10% 10%;
-  background-color: white;
-}
-
-/* INPUT TEXT AREA
-------------------*/
-.custom-home-search input {
-  border: none;
-  width: 70%;
-  font-size:calc(10px + 0.5vw);
-}
-
-/* SUBMIT BUTTON CSS
---------------------*/
-.custom-home-search input[type=submit] {
-  background: linear-gradient(to right, #ff105f, #ffad06);
-  color: black;
-  text-align: center;
-  width: 25%;
-  padding: 20px 0px 20px 0px;
-  border-radius: 5px;
-}
-
-/* SUBMIT BUTTON HOVER EFFECT
------------------------------*/
-.custom-home-search input[type=submit]:hover {
-  background: linear-gradient(to right, #83008f , #419100);
-  transition: .3s;
-}
-
-searchsubmit{
-font-size: 4vm;
-
 }

@@ -73,6 +73,9 @@
     border-radius: 30px;
 }
 
+.submit-btn[type=submit]:hover {
+    background: linear-gradient(to right, #83008f , #419100);
+}
 .chech-box{
     margin: 30px 10px 30px 0px;
 }
