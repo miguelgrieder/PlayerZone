@@ -7,7 +7,7 @@
     <title>Pesquisar</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/style_rodape.css">
-
+    
 </head>
 
 <body>
@@ -37,9 +37,17 @@
       </div>
   </header>
 
-  <center>
-    <img src="./img/ops_banco_de_dados.png" >
-  </center>
+
+  <div class="container-search"> <div class="custom-home-search">
+    <form role="search" method="get" id="searchform" class="searchform" action="#">
+      <label class="screen-reader-text" for="s"></label>
+      <i class="fa fa-search searchIcon"></i>
+      <input type="text" placeholder="Busque..." value name="s" id="s">
+      <input type="submit" id="searchsubmit" value="Pesquisar">
+     </form>
+    </div>
+   </div>
+
   <div class = "sub_menu"> PlayerZone - Ao utilizar você concorda com todos os<li class="link_termos"><a class="termos" href="./termos.html">Termos de Uso</a></li></div>
 
   <script src="./js/menu.js"></script>
