@@ -38,7 +38,6 @@
 
 
 .catalogo .catalogo_resize {
-
     object-fit: fill;
     border-radius: 30px;
 }
@@ -51,41 +50,9 @@
 
 }
 
-#top4 {
+#top {
     margin: 1% 1% 1% 1%;
     font-size: 1.4rem;
     font-weight: bold;
 }
 
-@media all{
-    .catalogo {
-        overflow: hidden;
-        display: flex;
-        justify-content: space-evenly;
-        margin-top: 0.6rem;
-        margin-left: 1rem;
-        margin-right: 1rem;
-        margin-bottom: 0.6rem;
-        background-color: rgb(210, 208, 221);
-    }
-
-    .catalogo ul {
-        list-style:none;
-        display:flex;
-    }  
-} 
-
-.vermais{
-    background: linear-gradient(to right, #ff105f, #ffad06);
-    color: black;
-    border-radius: 15px;
-    font-size:calc(14px + 0.2vw);
-    margin: 0.5%;
-  }
-
-  .vermais:hover {
-    background: linear-gradient(to right, #83008f , #419100);
-    transition: .3s;
-    color: wheat;
-  }
-  

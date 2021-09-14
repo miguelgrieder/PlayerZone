@@ -32,3 +32,6 @@ $("*").each( function () {
   }
 });
 
+function vermais() {
+  window.location.href = "./vermais.html";
+};

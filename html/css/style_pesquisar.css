@@ -1,48 +1,55 @@
 
-/* CUSTOM HOME SEARCH
+/* CUSTOM HOME pesquisa
 CONTAINER
 
-FONTE - https://www.fabriziovanmarciano.com/custom-search-form-page-html-css/
+FONTE - https://www.fabriziovanmarciano.com/custom-pesquisa-form-page-html-css/
 
 --------------------*/
-.container-search {
+.container-pesquisar {
   padding: 3px;
   border: 1px solid #f1f1f1;
-  border-radius: 5px;
+  border-radius: 30px;
   position: relative;
   margin: 10% 10% 10% 10%;
   background-color: white;
 }
 
-/* INPUT TEXT AREA
+/* INPUT TEXTO AREA
 ------------------*/
-.custom-home-search input {
+.barra_pesquisa input {
   border: none;
-  width: 70%;
+  padding-left:5%;
+  width: 65%;
   font-size:calc(10px + 0.5vw);
 }
 
-/* SUBMIT BUTTON CSS
+/* BOTAO PESQUISAR
 --------------------*/
-.custom-home-search input[type=submit] {
+.barra_pesquisa input[type=submit] {
   background: linear-gradient(to right, #ff105f, #ffad06);
   color: black;
   text-align: center;
   width: 25%;
   padding: 20px 0px 20px 0px;
-  border-radius: 5px;
+  border-radius: 30px;
 }
 
-/* SUBMIT BUTTON HOVER EFFECT
+/* BOTAO PESQUISAR HOVER EFFECT
 -----------------------------*/
-.custom-home-search input[type=submit]:hover {
+.barra_pesquisa input[type=submit]:hover {
   background: linear-gradient(to right, #83008f , #419100);
   transition: .3s;
+  color: wheat;
 }
 
-searchsubmit{
+.pesquisasubmit{
 font-size: 4vm;
 
 }
-/* FONTE https://www.fabriziovanmarciano.com/custom-search-form-page-html-css/
+/* FONTE https://www.fabriziovanmarciano.com/custom-pesquisa-form-page-html-css/
 -----------------------------*/
+#txt{
+  color: wheat;
+  text-align: center;
+  margin-top: 10%;
+}

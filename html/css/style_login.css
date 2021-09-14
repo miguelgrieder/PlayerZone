@@ -7,6 +7,7 @@
     background: #fff;
     padding: 5px;
     overflow: hidden;
+    vertical-align: middle;
 }
 
 .box-btn-logins{
@@ -75,6 +76,7 @@
 
 .submit-btn[type=submit]:hover {
     background: linear-gradient(to right, #83008f , #419100);
+    color: wheat;
 }
 .chech-box{
     margin: 30px 10px 30px 0px;
@@ -85,7 +87,7 @@ span{
     font-size: 12px; 
     bottom: 68px;
     position: absolute;
-    
+    text-decoration: none;
 }
 #login{  
     left: 50px;
