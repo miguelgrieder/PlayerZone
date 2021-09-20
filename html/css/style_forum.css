@@ -1,0 +1,44 @@
+body {
+    background-color: rgb(50, 47, 66);
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+h1  {
+    margin: 0.6rem;
+    border-radius: 15px;
+}
+h4  {
+    margin: 0.6rem;
+    border-radius: 15px;
+} 
+ol {
+    margin-right: 1rem;
+    margin-left: 1rem;
+    background-color: rgb(210, 208, 221);
+    border-radius: 15px;
+}
+p {
+    margin: 5px 0;
+}
+.top-bar {
+    margin-right: 1rem;
+    margin-left: 1rem;
+    background-color:rgb(210, 208, 221);
+    padding: 0 40px;
+    border-radius: 15px;
+}
+.row {
+    background-color: rgb(210, 208, 221);
+    margin: 0.6rem;
+    padding: 5px 0;
+}
+.bottom {
+    display: flex;
+    color: grey;
+    font-size: 12px;
+}
+.timestamp {
+    padding-right: 10px;
+}

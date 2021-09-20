@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrar</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style_login.css">
+</head>
+
+<body>
+  
+  <header>
+      <div class="container">
+        
+        <div>
+          <h2><a href="../index.html">PlayerZone</a></h2>
+          <div class="nav-toggle" id="navToggle">
+            
+            <img id="navClosed" class="navIcon" src="./img/icone_abrir.png" alt="mobile menu">
+            <img id="navOpen" class="navIcon hidden" src="./img/icone_fechar.png" alt="close mobile">
+          </div>
+        </div>
+        
+        <nav>
+          <ul>
+            <li><a href="./inicio.html">Inicio</a></li>
+            <li><a href="./comunidade.html">Comunidade</a></li>
+            <li><a href="./quem_somos.html">Quem Somos</a></li>
+            <li><a href="./pesquisar.html">Pesquisar</a></li>
+            <li><a href="./entrar.html">Entrar</a></li>
+          </ul>
+        </nav>
+        
+      </div>
+    </header>
+
+    <div>
+      <div class="janela-logins">
+          <div class="box-btn-logins">
+              <div id="btn"></div>
+              <button type="button" class="btns-logins" onclick="login()">Login</button>
+              <button type="button" class="btns-logins" onclick="cadastrar()">Cadastrar</button>
+            </div>
+
+          <form id = "login" class="input-group">
+              <div class = "titulo">Volte a ação!</div>
+              <input type="text" class="input-campo" placeholder="Codenome" required>
+              <input type="password" class="input-campo" placeholder="Senha" required>
+              <input type="checkbox" class="chech-box"><span>Lembrar senha</span>
+              <button type="submit" class="submit-btn">Entrar</button>
+          </form>
+          <form id = "cadastrar" class="input-group">
+              <div class = "titulo">Sua jornada começa aqui!</div>
+              <input type="text" class="input-campo" placeholder="Codenome" required>
+              <input type="email" class="input-campo" placeholder="Email" required>
+              <input type="password" class="input-campo" placeholder="Senha" required>
+              <input type="checkbox" class="chech-box"><span>Li e aceito todos os <a class = "termos" href="./termos.html">Termos de Uso</a> </span>
+              <button type="submit" class="submit-btn">Criar conta!</button>
+            </form>
+      </div>
+  </div>
+  <footer class = "sub_menu"> PlayerZone - Ao utilizar você concorda com todos os <a href="./termos.html" class="termos">Termos de Uso</a></footer>
+
+  <script src="./js/entrar.js"></script>
+
+  <script src="./js/menu.js"></script>
+    
+</body>
+
+</html>

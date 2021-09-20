@@ -1,0 +1,56 @@
+
+/* CUSTOM HOME pesquisa
+CONTAINER
+
+FONTE - https://www.fabriziovanmarciano.com/custom-pesquisa-form-page-html-css/
+
+--------------------*/
+.container-pesquisar {
+  padding: 3px;
+  border: 1px solid #f1f1f1;
+  border-radius: 30px;
+  position: relative;
+  margin: 10% 10% 10% 10%;
+  background-color: white;
+}
+
+/* INPUT TEXTO AREA
+------------------*/
+.barra_pesquisa input {
+  border: none;
+  padding-left:5%;
+  width: 65%;
+  font-size:calc(15px + 0.2vw);
+}
+
+/* BOTAO PESQUISAR
+--------------------*/
+.barra_pesquisa input[type=submit] {
+  background: linear-gradient(to right, #ff105f, #ffad06);
+  color: black;
+  text-align: center;
+  width: 25%;
+  padding: 20px 0px 20px 0px;
+  border-radius: 30px;
+  font-size:calc(10px + 0.5vw);
+}
+
+/* BOTAO PESQUISAR HOVER EFFECT
+-----------------------------*/
+.barra_pesquisa input[type=submit]:hover {
+  background: linear-gradient(to right, #83008f , #419100);
+  transition: .3s;
+  color: wheat;
+}
+
+.pesquisasubmit{
+font-size: 4vm;
+
+}
+/* FONTE https://www.fabriziovanmarciano.com/custom-pesquisa-form-page-html-css/
+-----------------------------*/
+#txt{
+  color: wheat;
+  text-align: center;
+  margin-top: 10%;
+}

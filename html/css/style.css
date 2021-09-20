@@ -1,0 +1,145 @@
+body {
+    background-color: rgb(50, 47, 66);
+    margin: 0;
+    font-family: Helvetica, Arial, sans-serif;
+  }
+  
+header {
+  background: rgb(155, 149, 190);
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 60rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.container h2 a {
+  color: #000;
+  text-decoration: none;
+}
+
+.container ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.container li {
+  display: inline-block;
+  padding: 0 1.25rem;
+}
+
+.container li a {
+  color: #000;
+  text-decoration: none;
+}
+
+.container li:hover a {
+  text-decoration: underline;
+}
+
+/* Footer - rodape - submenu e termos */
+.sub_menu{  
+  color: orange;
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+  margin: 7% 0% 0% 0%;
+}
+
+
+.termos{
+  color: rgb(255, 198, 93);
+  text-decoration: none;
+}
+
+
+/* Usado para midias principais em uma pagina */
+.paragrafo_texto{
+  color: wheat;
+  position: relative;
+  text-align: center;
+  margin: 5% 5% 5% 5%;
+}
+
+.img_central{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 25px;
+  width: 50%;
+}
+
+/* Mobile Toggle */
+
+.nav-toggle {
+  display: none;
+  position: absolute;
+  right: 1rem;
+  top: 1.5rem;
+  cursor: pointer;
+}
+
+.nav-toggle img {
+  width: 1.5rem;
+  transition: 300ms all ease;
+}
+
+.nav-toggle:hover img {
+  opacity: 0.6;
+}
+
+.open {
+  height: 100vh;
+}
+
+.hidden {
+  display: none;
+}
+  
+  
+  /* Mobile */
+@media all and (max-width: 720px) {
+  .container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav {
+    height: 0;
+    min-width: 100%;
+    overflow: hidden;
+    transition: 250ms height ease-in-out;
+  }
+
+  .container li {
+    display: block;
+    text-align: center;
+    padding: 1.5rem 0;
+  }
+
+  .container li a {
+    font-size: 1.4rem;
+  }
+
+  .nav-toggle {
+    display: block;
+  }
+}
+
+.playzer_zone_nome_e_icone {
+  border-radius: 1em;
+  padding: 1em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%) 
+}
+
+.playzer_zone_nome_e_icone_inicializacao {
+  opacity: 0.6;
+}
