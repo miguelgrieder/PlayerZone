@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
-const ThreadSchema = Schema({
+const ThreadSchema = new Schema({
     id: Number,
     Title: String,
     Main_Text: String,
@@ -9,3 +9,5 @@ const ThreadSchema = Schema({
     Time: Date,
     Comments: Array
 })
+
+module.exports = { ThreadSchema };

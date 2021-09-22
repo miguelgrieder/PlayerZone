@@ -1,4 +1,4 @@
-import { GameSchema } from './GameSchema';
+const { GameSchema } = require('./GameSchema');
 const mongoose = require('mongoose');
 
 const mongooseModel = mongoose.model('Game', GameSchema);
@@ -13,13 +13,14 @@ function selectGame(name){
     query.then((result) => { console.log(result)    });
 }
 
-function insertUser(user) {
-    const entry = new mongooseModel(user);
+function insertGame(game) {
+    const entry = new mongooseModel(game);
     entry.save(function(err) {
         if (err) {
-            return handleError(err)
+            console.log(err)
+            console.log('Deu ruim')
         } else {
-            console.log('Usuário inserido!');
+            console.log('Jogo inserido!');
         }
     })
 }
@@ -27,3 +28,5 @@ function insertUser(user) {
 function updateGame(query, data) {
 
 }
+
+module.exports = { selectAllGames, selectGame, insertGame, updateGame };
