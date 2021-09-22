@@ -32,6 +32,14 @@ $("*").each( function () {
   }
 });
 
-function vermais() {
-  window.location.href = "./vermais.html";
+function vermais_jogo() {
+  window.location.href = "./vermais_jogo.html";
 };
+function vermais_usuario() {
+  window.location.href = "./vermais_usuario.html";
+};
+
+function vermais_novidade() {
+  window.location.href = "./vermais_novidade.html";
+};
+
