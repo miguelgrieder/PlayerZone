@@ -17,6 +17,8 @@ function insertUser(user) {
     const entry = new mongooseModel(user);
     entry.save(function(err) {
         if (err) {
+            console.log(err)
+            console.log('Deu ruim')
         } else {
             console.log('Usuário inserido!');
         }

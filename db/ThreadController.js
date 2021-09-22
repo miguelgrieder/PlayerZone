@@ -17,6 +17,8 @@ function insertThread(thread) {
     const entry = new mongooseModel(thread);
     entry.save(function(err) {
         if (err) {
+            console.log(err)
+            console.log('Deu ruim')
         } else {
             console.log('Thread inserida!');
         }
