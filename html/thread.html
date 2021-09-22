@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forum</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style_thread.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+          
+          <div>
+            <h2><a href="../index.html">PlayerZone</a></h2>
+            <div class="nav-toggle" id="navToggle">
+              
+              <img id="navClosed" class="navIcon" src="./img/icone_abrir.png" alt="mobile menu">
+              <img id="navOpen" class="navIcon hidden" src="./img/icone_fechar.png" alt="close mobile">
+            </div>
+          </div>
+          
+          <nav>
+            <ul>
+              <li><a href="./inicio.html">Inicio</a></li>
+              <li><a href="./comunidade.html">Comunidade</a></li>
+              <li><a href="./quem_somos.html">Quem Somos</a></li>
+              <li><a href="./pesquisar.html">Pesquisar</a></li>
+              <li><a href="./entrar.html">Entrar</a></li>
+            </ul>
+          </nav>
+          
+        </div>
+        
+      </header>
+<body>
+    <div class="top-bar">
+        <h1>
+            [JOGO]
+        </h1>
+    </div>
+    <div class="main">
+        <div class="header">
+        </div>
+        <textarea></textarea>
+        <button>Comentar</button>
+        <div class="comments">
+        </div>
+    </div>
+    <script src="./js/forum.js"></script>
+    <script>
+        var id = window.location.search.slice(1);
+        var thread = threads.find(t => t.id == id);
+        var header = document.querySelector('.header');
+        var headerHtml = `
+            <h4 class="title">
+                ${thread.title}
+            </h4>
+            <div class="bottom">
+                <p class="timestamp">
+                    ${new Date(thread.date).toLocaleString()}
+                </p>
+                <p class="comment-count">
+                    ${thread.comments.length} comentários
+                </p>
+            </div>
+        `
+        header.insertAdjacentHTML('beforeend', headerHtml)
+
+        function addComment(comment) {
+            var commentHtml = `
+                <div class="comment">
+                    <div class="top-comment">
+                        <p class="user">
+                            ${comment.author}
+                        </p>
+                        <p class="comment-ts">
+                            ${new Date(comment.date).toLocaleString()}
+                        </p>
+                    </div>
+                    <div class="comment-content">
+                        ${comment.content}
+                    </div>
+                </div>
+            `
+            comments.insertAdjacentHTML('beforeend', commentHtml);
+        }
+
+        var comments = document.querySelector('.comments');
+        for (let comment of thread.comments) {
+            addComment(comment);
+        }
+
+        var btn = document.querySelector('button');
+        btn.addEventListener('click', function() {
+            var txt = document.querySelector('textarea');
+            var comment = {
+                content: txt.value,
+                date: Date.now(),
+                author: 'Matheus'
+            }
+            addComment(comment);
+            txt.value = '';
+            thread.comments.push(comment);
+            localStorage.setItem('threads', JSON.stringify(threads));
+        })
+    </script>
+    <footer class = "sub_menu"> PlayerZone - Ao utilizar você concorda com todos os <a href="./termos.html" class="termos">Termos de Uso</a></footer>
+
+    <script src="./js/menu.js">
+    
+    </script>
+</body>
+
+</html>
