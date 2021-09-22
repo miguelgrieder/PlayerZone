@@ -17,6 +17,17 @@
     margin: 0 0 0 0;
     
 }
+.catalogo ul li:hover {
+    background:rgb(76, 73, 94);
+    color: wheat;
+    border-radius: 15px;
+
+}
+
+.catalogo ul li img:hover {
+    transition: .5s;
+    border-radius: 5px;
+}
 
 .catalogo ul li {
     display: inline-block;
