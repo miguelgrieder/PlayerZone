@@ -6,5 +6,6 @@ const ThreadSchema = Schema({
     Title: String,
     Main_Text: String,
     User: String,
-    Time: Date    
+    Time: Date,
+    Comments: Array
 })
