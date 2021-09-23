@@ -29,4 +29,4 @@ function updateGame(query, data) {
 
 }
 
-module.exports = { selectAllGames, selectGame, insertGame, updateGame };
+module.exports = { selectAllGames, selectGame, insertGame, updateGame }
