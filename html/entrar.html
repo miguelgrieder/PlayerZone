@@ -61,9 +61,30 @@
   </div>
   <footer class = "sub_menu"> PlayerZone - Ao utilizar você concorda com todos os <a href="./termos.html" class="termos">Termos de Uso</a></footer>
 
-  <script src="./js/entrar.js"></script>
+  <script src="./js/entrar.js">
+  </script>
 
   <script src="./js/menu.js"></script>
+
+  <script>
+    
+    var x = document.getElementById("login");
+var y = document.getElementById("cadastrar");
+var z = document.getElementById("btn");
+
+function cadastrar(){
+    x.style.left = "-400px";
+    y.style.left = "50px";
+    z.style.left = "110px";
+}
+
+function login(){
+    x.style.left = "50px";
+    y.style.left = "450px";
+    z.style.left = "0px";
+}
+
+  </script>
     
 </body>
 
