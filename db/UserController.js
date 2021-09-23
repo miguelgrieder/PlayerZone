@@ -1,4 +1,4 @@
-import { UserSchema } from './UserSchema';
+const { UserSchema } = require('./UserSchema');
 const mongoose = require('mongoose');
 
 const mongooseModel = mongoose.model('User', UserSchema);
@@ -17,9 +17,10 @@ function insertUser(user) {
     const entry = new mongooseModel(user);
     entry.save(function(err) {
         if (err) {
-            return handleError(err)
+            console.log(err)
+            console.log('Deu ruim')
         } else {
-            console.log('Jogo inserido!');
+            console.log('Usuário inserido!');
         }
     })
 }
