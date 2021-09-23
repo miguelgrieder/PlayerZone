@@ -1,4 +1,4 @@
-import { GameSchema } from './GameSchema';
+const { GameSchema } = require('./GameSchema');
 const mongoose = require('mongoose');
 
 const mongooseModel = mongoose.model('Game', GameSchema);
@@ -17,9 +17,10 @@ function insertGame(game) {
     const entry = new mongooseModel(game);
     entry.save(function(err) {
         if (err) {
-            return handleError(err)
+            console.log(err)
+            console.log('Deu ruim')
         } else {
-            console.log('Usuário inserido!');
+            console.log('Jogo inserido!');
         }
     })
 }
