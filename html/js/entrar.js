@@ -1,6 +1,5 @@
 import { selectAllUsers, selectUser, insertUser, updateUser } from '../../db/UserController';
 
-
 function LoginDB(){
     var Usuario = selectUser(Codenome)
     if (Senha == Usuario.Senha){
@@ -19,11 +18,24 @@ function CadastrarDB(){
             alert("Email já cadastrado!");
         }
         else{
-            insertUser({
-            Nick: Codenome,
-            Email: Email,
-            Password: Senha
+            let user = {
+        Nick: Codenome,
+        Email: Email,
+        Password: Senha
+    };
+    insereUsuario(user);
+    insertUser({
+        Nick: Codenome,
+        Email: Email,
+        Password: Senha
     })
+    }
         }
     }
+const insereUsuario = async (user) => {
+    let resposta = await fetch("/users", 
+    {
+       method: "POST",
+       body: JSON.stringify(user)
+    });
 }
