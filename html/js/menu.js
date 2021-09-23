@@ -25,12 +25,7 @@ window.addEventListener(
   { passive: false }
 );
 
-$("*").each( function () {
-  var $this = $(this);
-  if (parseInt($this.css("fontSize")) < 200) {
-      $this.css({ "font-size": "12px" });   
-  }
-});
+
 
 function vermais_jogo() {
   window.location.href = "./vermais_jogo.html";
