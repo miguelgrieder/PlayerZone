@@ -1,3 +1,5 @@
+import { selectAllUsers, selectUser, insertUser, updateUser } from '../../db/UserController'
+
 var x = document.getElementById("login");
 var y = document.getElementById("cadastrar");
 var z = document.getElementById("btn");
@@ -12,4 +14,13 @@ function login(){
     x.style.left = "50px";
     y.style.left = "450px";
     z.style.left = "0px";
+}
+
+function CadastrarDB(){
+    insereUsuario(user);
+    insertUser({
+        Nick: Codenome,
+        Email: Email,
+        Password: Senha
+    })
 }

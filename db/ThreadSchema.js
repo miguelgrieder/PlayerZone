@@ -8,3 +8,5 @@ const ThreadSchema = Schema({
     User: String,
     Time: Date    
 })
+
+module.exports = { ThreadSchema }

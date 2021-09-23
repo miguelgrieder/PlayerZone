@@ -13,8 +13,8 @@ function selectUser(name){
     query.then((result) => { console.log(result)    });
 }
 
-function insertGame(game) {
-    const entry = new mongooseModel(game);
+function insertUser(user) {
+    const entry = new mongooseModel(user);
     entry.save(function(err) {
         if (err) {
             return handleError(err)
@@ -24,6 +24,8 @@ function insertGame(game) {
     })
 }
 
-function updateGame(query, data) {
+function updateUser(query, data) {
     
 }
+
+module.exports = { selectAllUsers, selectUser, insertUser, updateUser }

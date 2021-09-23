@@ -4,9 +4,9 @@ const Schema = mongoose.Schema;
 
 const GameSchema = new Schema({
     Title: String,
-    Release: Date,
+    Release: String,
     Gender: String,
     Empresa: String
 });
 
-export { GameSchema };
+module.exports = { GameSchema };
