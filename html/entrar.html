@@ -52,17 +52,17 @@
           </form>
           <form id = "cadastrar" class="input-group">
               <div class = "titulo">Sua jornada começa aqui!</div>
-              <input type="text" class="input-campo" placeholder="Codenome" required>
-              <input type="email" class="input-campo" placeholder="Email" required>
-              <input type="password" class="input-campo" placeholder="Senha" required>
+              <input type="text" class="input-campo" placeholder="Codenome" id="Codenome" required>
+              <input type="email" class="input-campo" placeholder="Email" id="Email" required>
+              <input type="password" class="input-campo" placeholder="Senha" id="Senha" required>
               <input type="checkbox" class="chech-box"><span>Li e aceito todos os <a class = "termos" href="./termos.html">Termos de Uso</a> </span>
-              <button type="submit" class="submit-btn">Criar conta!</button>
+              <button type="submit" class="submit-btn" onclick="CadastrarDB()">Criar conta!</button>
             </form>
       </div>
   </div>
   <footer class = "sub_menu"> PlayerZone - Ao utilizar você concorda com todos os <a href="./termos.html" class="termos">Termos de Uso</a></footer>
 
-  <script src="./js/entrar.js"></script>
+  <script src="./js/entrar.js" type="module"></script>
 
   <script src="./js/menu.js"></script>
     
